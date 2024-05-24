@@ -1,7 +1,6 @@
 import sqlite3
 import random
 import subprocess
-import random
 import time
 import datetime
 import asyncio
