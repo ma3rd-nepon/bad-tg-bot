@@ -1,0 +1,1473 @@
+08:40:26,956 pyrogram.session.auth INFO Start creating a new auth key on DC2
+08:40:26,956 pyrogram.connection.connection INFO Connecting...
+08:40:27,93 pyrogram.connection.connection INFO Connected! Production DC2 - IPv4
+08:40:27,93 pyrogram.session.auth DEBUG Send req_pq: -95492074043480770103682706686213812088
+08:40:27,301 pyrogram.session.auth DEBUG Got ResPq: 96748168078526904826149912068898565599
+08:40:27,301 pyrogram.session.auth DEBUG Server public key fingerprints: [
+    847625836280919973,
+    -4344800451088585951,
+    -3414540481677951611
+]
+08:40:27,302 pyrogram.session.auth DEBUG Using fingerprint: 847625836280919973
+08:40:27,302 pyrogram.session.auth DEBUG Start PQ factorization: 1827671223697374977
+08:40:27,329 pyrogram.session.auth DEBUG Done PQ factorization (0.018s): 1276447061 1431842557
+08:40:27,329 pyrogram.session.auth DEBUG Done encrypt data with RSA
+08:40:27,329 pyrogram.session.auth DEBUG Send req_DH_params
+08:40:27,915 pyrogram.session.auth DEBUG Done decrypting answer
+08:40:27,915 pyrogram.session.auth DEBUG Delta time: -0.915
+08:40:27,932 pyrogram.session.auth DEBUG Send set_client_DH_params
+08:40:28,500 pyrogram.session.auth DEBUG DH parameters check: OK
+08:40:28,500 pyrogram.session.auth DEBUG g_a and g_b validation: OK
+08:40:28,500 pyrogram.session.auth DEBUG SHA1 hash values check: OK
+08:40:28,500 pyrogram.session.auth DEBUG Nonce fields check: OK
+08:40:28,500 pyrogram.session.auth DEBUG Server salt: 2053090303202469683
+08:40:28,500 pyrogram.session.auth INFO Done auth key exchange: DhGenOk
+08:40:28,501 pyrogram.connection.connection INFO Disconnected
+08:40:28,552 pyrogram.connection.connection INFO Connecting...
+08:40:28,631 pyrogram.connection.connection INFO Connected! Production DC2 - IPv4
+08:40:28,634 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436896888127488,
+    "seq_no": 0,
+    "length": 12,
+    "body": {
+        "_": "functions.Ping",
+        "ping_id": 0
+    }
+}
+08:40:28,635 pyrogram.session.session INFO NetworkTask started
+08:40:28,828 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436897291330561,
+    "seq_no": 0,
+    "length": 28,
+    "body": {
+        "_": "types.BadServerSalt",
+        "bad_msg_id": 7372436896888127488,
+        "bad_msg_seqno": 0,
+        "error_code": 48,
+        "new_server_salt": 2053090303202469683
+    }
+}
+08:40:28,828 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436896888127492,
+    "seq_no": 0,
+    "length": 12,
+    "body": {
+        "_": "functions.Ping",
+        "ping_id": 0
+    }
+}
+08:40:28,928 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436897683726345,
+    "seq_no": 2,
+    "length": 88,
+    "body": {
+        "_": "MsgContainer",
+        "messages": [
+            {
+                "_": "Message",
+                "msg_id": 7372436897683726337,
+                "seq_no": 1,
+                "length": 28,
+                "body": {
+                    "_": "types.NewSessionCreated",
+                    "first_msg_id": 7372436896888127492,
+                    "unique_id": 3506454728361429001,
+                    "server_salt": 2053090303202469683
+                }
+            },
+            {
+                "_": "Message",
+                "msg_id": 7372436897683726341,
+                "seq_no": 2,
+                "length": 20,
+                "body": {
+                    "_": "types.Pong",
+                    "msg_id": 7372436896888127492,
+                    "ping_id": 0
+                }
+            }
+        ]
+    }
+}
+08:40:28,967 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436896888127504,
+    "seq_no": 1,
+    "length": 84,
+    "body": {
+        "_": "functions.InvokeWithLayer",
+        "layer": 158,
+        "query": {
+            "_": "functions.InitConnection",
+            "api_id": 9990705,
+            "device_model": "CPython 3.11.8",
+            "system_version": "Windows 10",
+            "app_version": "Pyrogram 2.0.106",
+            "system_lang_code": "en",
+            "lang_pack": "",
+            "lang_code": "en",
+            "query": {
+                "_": "functions.help.GetConfig"
+            }
+        }
+    }
+}
+08:40:29,51 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436898241369089,
+    "seq_no": 3,
+    "length": 396,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436896888127504,
+        "result": {
+            "_": "types.Config",
+            "date": 1716529228,
+            "expires": 1716532901,
+            "test_mode": false,
+            "this_dc": 2,
+            "dc_options": [
+                {
+                    "_": "types.DcOption",
+                    "id": 1,
+                    "ip_address": "149.154.175.53",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 1,
+                    "ip_address": "149.154.175.53",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": true,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 1,
+                    "ip_address": "2001:0b28:f23d:f001:0000:0000:0000:000a",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 2,
+                    "ip_address": "149.154.167.41",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 2,
+                    "ip_address": "149.154.167.41",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": true,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 2,
+                    "ip_address": "149.154.167.151",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": true,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 2,
+                    "ip_address": "2001:067c:04e8:f002:0000:0000:0000:000a",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 2,
+                    "ip_address": "2001:067c:04e8:f002:0000:0000:0000:000b",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": true,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 3,
+                    "ip_address": "149.154.175.100",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 3,
+                    "ip_address": "149.154.175.100",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": true,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 3,
+                    "ip_address": "2001:0b28:f23d:f003:0000:0000:0000:000a",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 4,
+                    "ip_address": "149.154.167.92",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 4,
+                    "ip_address": "149.154.167.92",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": true,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 4,
+                    "ip_address": "2001:067c:04e8:f004:0000:0000:0000:000a",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 4,
+                    "ip_address": "149.154.166.120",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": true,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 4,
+                    "ip_address": "2001:067c:04e8:f004:0000:0000:0000:000b",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": true,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 5,
+                    "ip_address": "2001:0b28:f23f:f005:0000:0000:0000:000a",
+                    "port": 443,
+                    "ipv6": true,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 5,
+                    "ip_address": "91.108.56.191",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": false,
+                    "this_port_only": false
+                },
+                {
+                    "_": "types.DcOption",
+                    "id": 5,
+                    "ip_address": "91.108.56.191",
+                    "port": 443,
+                    "ipv6": false,
+                    "media_only": false,
+                    "tcpo_only": false,
+                    "cdn": false,
+                    "static": true,
+                    "this_port_only": false
+                }
+            ],
+            "dc_txt_domain_name": "apv3.stel.com",
+            "chat_size_max": 200,
+            "megagroup_size_max": 200000,
+            "forwarded_count_max": 100,
+            "online_update_period_ms": 210000,
+            "offline_blur_timeout_ms": 5000,
+            "offline_idle_timeout_ms": 30000,
+            "online_cloud_timeout_ms": 300000,
+            "notify_cloud_delay_ms": 30000,
+            "notify_default_delay_ms": 1500,
+            "push_chat_period_ms": 60000,
+            "push_chat_limit": 2,
+            "edit_time_limit": 172800,
+            "revoke_time_limit": 2147483647,
+            "revoke_pm_time_limit": 2147483647,
+            "rating_e_decay": 2419200,
+            "stickers_recent_limit": 200,
+            "channels_read_media_period": 604800,
+            "call_receive_timeout_ms": 20000,
+            "call_ring_timeout_ms": 90000,
+            "call_connect_timeout_ms": 30000,
+            "call_packet_timeout_ms": 10000,
+            "me_url_prefix": "https://t.me/",
+            "caption_length_max": 1024,
+            "message_length_max": 4096,
+            "webfile_dc_id": 4,
+            "default_p2p_contacts": true,
+            "preload_featured_stickers": false,
+            "revoke_pm_inbox": true,
+            "blocked_mode": false,
+            "force_try_ipv6": false,
+            "gif_search_username": "gif",
+            "venue_search_username": "foursquare",
+            "img_search_username": "bing"
+        }
+    }
+}
+08:40:29,51 pyrogram.session.session INFO Session initialized: Layer 158
+08:40:29,51 pyrogram.session.session INFO Device: CPython 3.11.8 - Pyrogram 2.0.106
+08:40:29,52 pyrogram.session.session INFO System: Windows 10 (en)
+08:40:29,52 pyrogram.session.session INFO Session started
+08:40:29,54 pyrogram.session.session INFO PingTask started
+08:40:29,54 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436901183094788,
+    "seq_no": 3,
+    "length": 96,
+    "body": {
+        "_": "functions.auth.ImportBotAuthorization",
+        "flags": 0,
+        "api_id": 9990705,
+        "api_hash": "571574b7bfaa17e049f4d46005c916d1",
+        "bot_auth_token": "6891506611:AAHsb0jw96kNWyKZm7-CHgSuIM2fqyv2QtI"
+    }
+}
+08:40:29,144 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436898641790977,
+    "seq_no": 5,
+    "length": 152,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436901183094788,
+        "result": {
+            "_": "types.auth.Authorization",
+            "user": {
+                "_": "types.User",
+                "id": 6891506611,
+                "is_self": true,
+                "contact": false,
+                "mutual_contact": false,
+                "deleted": false,
+                "bot": true,
+                "bot_chat_history": false,
+                "bot_nochats": false,
+                "verified": false,
+                "restricted": false,
+                "min": false,
+                "bot_inline_geo": false,
+                "support": false,
+                "scam": false,
+                "apply_min_photo": true,
+                "fake": false,
+                "bot_attach_menu": false,
+                "premium": false,
+                "attach_menu_enabled": false,
+                "bot_can_edit": true,
+                "access_hash": -2837937283120083366,
+                "first_name": "лучше чем сучьи стоны",
+                "username": "bolshe_ne_grusti_bot",
+                "photo": {
+                    "_": "types.UserProfilePhoto",
+                    "photo_id": 5357226121663469243,
+                    "dc_id": 2,
+                    "has_video": false,
+                    "personal": false
+                },
+                "bot_info_version": 5,
+                "restriction_reason": [],
+                "bot_inline_placeholder": "бананы",
+                "usernames": []
+            },
+            "setup_password_required": false
+        }
+    }
+}
+08:40:29,250 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436901183094796,
+    "seq_no": 5,
+    "length": 4,
+    "body": {
+        "_": "functions.updates.GetState"
+    }
+}
+08:40:29,330 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436899444747265,
+    "seq_no": 7,
+    "length": 36,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436901183094796,
+        "result": {
+            "_": "types.updates.State",
+            "pts": 3175,
+            "qts": 0,
+            "date": 1716529228,
+            "seq": 1,
+            "unread_count": 1323
+        }
+    }
+}
+08:40:29,330 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436901183094804,
+    "seq_no": 7,
+    "length": 8,
+    "body": {
+        "_": "functions.users.GetFullUser",
+        "id": {
+            "_": "types.InputUserSelf"
+        }
+    }
+}
+08:40:29,421 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436899830380545,
+    "seq_no": 9,
+    "length": 368,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436901183094804,
+        "result": {
+            "_": "types.users.UserFull",
+            "full_user": {
+                "_": "types.UserFull",
+                "id": 6891506611,
+                "settings": {
+                    "_": "types.PeerSettings",
+                    "report_spam": false,
+                    "add_contact": false,
+                    "block_contact": false,
+                    "share_contact": false,
+                    "need_contacts_exception": false,
+                    "report_geo": false,
+                    "autoarchived": false,
+                    "invite_members": false,
+                    "request_chat_broadcast": false
+                },
+                "notify_settings": {
+                    "_": "types.PeerNotifySettings",
+                    "show_previews": true,
+                    "silent": false,
+                    "mute_until": 0,
+                    "ios_sound": {
+                        "_": "types.NotificationSoundDefault"
+                    },
+                    "android_sound": {
+                        "_": "types.NotificationSoundLocal",
+                        "title": "default",
+                        "data": "default"
+                    },
+                    "other_sound": {
+                        "_": "types.NotificationSoundLocal",
+                        "title": "default",
+                        "data": "default"
+                    }
+                },
+                "common_chats_count": 0,
+                "blocked": false,
+                "phone_calls_available": false,
+                "phone_calls_private": false,
+                "can_pin_message": true,
+                "has_scheduled": false,
+                "video_calls_available": false,
+                "voice_messages_forbidden": false,
+                "translations_disabled": false,
+                "about": "бананы",
+                "profile_photo": {
+                    "_": "types.Photo",
+                    "id": 5357226121663469243,
+                    "access_hash": -2680980311838830739,
+                    "file_reference": "b'\\x00fP(L\\xe1\\xb4~eB\\xbc\\xbdt\\xf3\\xd5\\xf3W}M\\xf8Q'",
+                    "date": 1707760398,
+                    "sizes": [
+                        {
+                            "_": "types.PhotoSize",
+                            "type": "a",
+                            "w": 160,
+                            "h": 160,
+                            "size": 13096
+                        },
+                        {
+                            "_": "types.PhotoSize",
+                            "type": "b",
+                            "w": 320,
+                            "h": 320,
+                            "size": 32810
+                        },
+                        {
+                            "_": "types.PhotoSize",
+                            "type": "c",
+                            "w": 640,
+                            "h": 640,
+                            "size": 64291
+                        }
+                    ],
+                    "dc_id": 2,
+                    "has_stickers": false,
+                    "video_sizes": []
+                },
+                "bot_info": {
+                    "_": "types.BotInfo",
+                    "commands": [
+                        {
+                            "_": "types.BotCommand",
+                            "command": "help",
+                            "description": "справка по боту"
+                        }
+                    ]
+                },
+                "premium_gifts": []
+            },
+            "chats": [],
+            "users": [
+                {
+                    "_": "types.User",
+                    "id": 6891506611,
+                    "is_self": true,
+                    "contact": false,
+                    "mutual_contact": false,
+                    "deleted": false,
+                    "bot": true,
+                    "bot_chat_history": false,
+                    "bot_nochats": false,
+                    "verified": false,
+                    "restricted": false,
+                    "min": false,
+                    "bot_inline_geo": false,
+                    "support": false,
+                    "scam": false,
+                    "apply_min_photo": true,
+                    "fake": false,
+                    "bot_attach_menu": false,
+                    "premium": false,
+                    "attach_menu_enabled": false,
+                    "bot_can_edit": true,
+                    "access_hash": -2837937283120083366,
+                    "first_name": "лучше чем сучьи стоны",
+                    "username": "bolshe_ne_grusti_bot",
+                    "photo": {
+                        "_": "types.UserProfilePhoto",
+                        "photo_id": 5357226121663469243,
+                        "dc_id": 2,
+                        "has_video": false,
+                        "personal": false
+                    },
+                    "bot_info_version": 5,
+                    "restriction_reason": [],
+                    "bot_inline_placeholder": "бананы",
+                    "usernames": []
+                }
+            ]
+        }
+    }
+}
+08:40:29,422 pyrogram.dispatcher INFO Started 16 HandlerTasks
+08:40:34,71 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436922657931264,
+    "seq_no": 9,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:34,148 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436920134913025,
+    "seq_no": 10,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372436922657931264,
+        "ping_id": 0
+    }
+}
+08:40:35,172 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436924533850113,
+    "seq_no": 11,
+    "length": 268,
+    "body": {
+        "_": "types.Updates",
+        "updates": [
+            {
+                "_": "types.UpdateNewChannelMessage",
+                "message": {
+                    "_": "types.Message",
+                    "id": 40445,
+                    "peer_id": {
+                        "_": "types.PeerChannel",
+                        "channel_id": 2129037364
+                    },
+                    "date": 1716529234,
+                    "message": "сбить",
+                    "out": false,
+                    "mentioned": false,
+                    "media_unread": false,
+                    "silent": false,
+                    "post": false,
+                    "from_scheduled": false,
+                    "legacy": false,
+                    "edit_hide": false,
+                    "pinned": false,
+                    "noforwards": false,
+                    "from_id": {
+                        "_": "types.PeerUser",
+                        "user_id": 1242755674
+                    },
+                    "reply_to": {
+                        "_": "types.MessageReplyHeader",
+                        "reply_to_msg_id": 40442,
+                        "reply_to_scheduled": false,
+                        "forum_topic": false
+                    },
+                    "entities": [],
+                    "restriction_reason": []
+                },
+                "pts": 44647,
+                "pts_count": 1
+            }
+        ],
+        "users": [
+            {
+                "_": "types.User",
+                "id": 1242755674,
+                "is_self": false,
+                "contact": false,
+                "mutual_contact": false,
+                "deleted": false,
+                "bot": false,
+                "bot_chat_history": false,
+                "bot_nochats": false,
+                "verified": false,
+                "restricted": false,
+                "min": false,
+                "bot_inline_geo": false,
+                "support": false,
+                "scam": false,
+                "apply_min_photo": true,
+                "fake": false,
+                "bot_attach_menu": false,
+                "premium": false,
+                "attach_menu_enabled": false,
+                "bot_can_edit": false,
+                "access_hash": -7191053192628064216,
+                "first_name": "m\xe6rd",
+                "username": "mrdxdd",
+                "photo": {
+                    "_": "types.UserProfilePhoto",
+                    "photo_id": 5341360868954329246,
+                    "dc_id": 2,
+                    "has_video": false,
+                    "personal": false
+                },
+                "status": {
+                    "_": "types.UserStatusRecently"
+                },
+                "restriction_reason": [],
+                "lang_code": "ru",
+                "usernames": []
+            }
+        ],
+        "chats": [
+            {
+                "_": "types.Channel",
+                "id": 2129037364,
+                "title": "чат extema",
+                "photo": {
+                    "_": "types.ChatPhoto",
+                    "photo_id": 5242362383882640766,
+                    "dc_id": 2,
+                    "has_video": false
+                },
+                "date": 1714226667,
+                "creator": false,
+                "left": false,
+                "broadcast": false,
+                "verified": false,
+                "megagroup": true,
+                "restricted": false,
+                "signatures": false,
+                "min": false,
+                "scam": false,
+                "has_link": true,
+                "has_geo": false,
+                "slowmode_enabled": false,
+                "call_active": false,
+                "call_not_empty": false,
+                "fake": false,
+                "gigagroup": false,
+                "noforwards": false,
+                "join_to_send": false,
+                "join_request": false,
+                "forum": false,
+                "access_hash": 5767601353792587173,
+                "username": "extemachatik",
+                "restriction_reason": [],
+                "admin_rights": {
+                    "_": "types.ChatAdminRights",
+                    "change_info": true,
+                    "post_messages": false,
+                    "edit_messages": false,
+                    "delete_messages": true,
+                    "ban_users": true,
+                    "invite_users": true,
+                    "pin_messages": true,
+                    "add_admins": false,
+                    "anonymous": false,
+                    "manage_call": false,
+                    "other": true,
+                    "manage_topics": false
+                },
+                "default_banned_rights": {
+                    "_": "types.ChatBannedRights",
+                    "until_date": 2147483647,
+                    "view_messages": false,
+                    "send_messages": false,
+                    "send_media": false,
+                    "send_stickers": false,
+                    "send_gifs": false,
+                    "send_games": false,
+                    "send_inline": false,
+                    "embed_links": false,
+                    "send_polls": false,
+                    "change_info": true,
+                    "invite_users": false,
+                    "pin_messages": true,
+                    "manage_topics": false,
+                    "send_photos": false,
+                    "send_videos": false,
+                    "send_roundvideos": false,
+                    "send_audios": false,
+                    "send_voices": false,
+                    "send_docs": false,
+                    "send_plain": false
+                },
+                "usernames": []
+            }
+        ],
+        "date": 1716529233,
+        "seq": 0
+    }
+}
+08:40:35,173 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436926952898564,
+    "seq_no": 11,
+    "length": 40,
+    "body": {
+        "_": "functions.channels.GetMessages",
+        "channel": {
+            "_": "types.InputPeerChannel",
+            "channel_id": 2129037364,
+            "access_hash": 5767601353792587173
+        },
+        "id": [
+            {
+                "_": "types.InputMessageReplyTo",
+                "id": 40445
+            }
+        ]
+    }
+}
+08:40:35,260 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436924908808193,
+    "seq_no": 13,
+    "length": 260,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436926952898564,
+        "result": {
+            "_": "types.messages.ChannelMessages",
+            "pts": 44647,
+            "count": 1,
+            "messages": [
+                {
+                    "_": "types.Message",
+                    "id": 40442,
+                    "peer_id": {
+                        "_": "types.PeerChannel",
+                        "channel_id": 2129037364
+                    },
+                    "date": 1716527205,
+                    "message": "соси",
+                    "out": false,
+                    "mentioned": false,
+                    "media_unread": false,
+                    "silent": false,
+                    "post": false,
+                    "from_scheduled": false,
+                    "legacy": false,
+                    "edit_hide": false,
+                    "pinned": false,
+                    "noforwards": false,
+                    "from_id": {
+                        "_": "types.PeerUser",
+                        "user_id": 1242755674
+                    },
+                    "entities": [],
+                    "restriction_reason": []
+                }
+            ],
+            "topics": [],
+            "chats": [
+                {
+                    "_": "types.Channel",
+                    "id": 2129037364,
+                    "title": "чат extema",
+                    "photo": {
+                        "_": "types.ChatPhoto",
+                        "photo_id": 5242362383882640766,
+                        "dc_id": 2,
+                        "has_video": false
+                    },
+                    "date": 1714226667,
+                    "creator": false,
+                    "left": false,
+                    "broadcast": false,
+                    "verified": false,
+                    "megagroup": true,
+                    "restricted": false,
+                    "signatures": false,
+                    "min": false,
+                    "scam": false,
+                    "has_link": true,
+                    "has_geo": false,
+                    "slowmode_enabled": false,
+                    "call_active": false,
+                    "call_not_empty": false,
+                    "fake": false,
+                    "gigagroup": false,
+                    "noforwards": false,
+                    "join_to_send": false,
+                    "join_request": false,
+                    "forum": false,
+                    "access_hash": 5767601353792587173,
+                    "username": "extemachatik",
+                    "restriction_reason": [],
+                    "admin_rights": {
+                        "_": "types.ChatAdminRights",
+                        "change_info": true,
+                        "post_messages": false,
+                        "edit_messages": false,
+                        "delete_messages": true,
+                        "ban_users": true,
+                        "invite_users": true,
+                        "pin_messages": true,
+                        "add_admins": false,
+                        "anonymous": false,
+                        "manage_call": false,
+                        "other": true,
+                        "manage_topics": false
+                    },
+                    "default_banned_rights": {
+                        "_": "types.ChatBannedRights",
+                        "until_date": 2147483647,
+                        "view_messages": false,
+                        "send_messages": false,
+                        "send_media": false,
+                        "send_stickers": false,
+                        "send_gifs": false,
+                        "send_games": false,
+                        "send_inline": false,
+                        "embed_links": false,
+                        "send_polls": false,
+                        "change_info": true,
+                        "invite_users": false,
+                        "pin_messages": true,
+                        "manage_topics": false,
+                        "send_photos": false,
+                        "send_videos": false,
+                        "send_roundvideos": false,
+                        "send_audios": false,
+                        "send_voices": false,
+                        "send_docs": false,
+                        "send_plain": false
+                    },
+                    "usernames": []
+                }
+            ],
+            "users": [
+                {
+                    "_": "types.User",
+                    "id": 1242755674,
+                    "is_self": false,
+                    "contact": false,
+                    "mutual_contact": false,
+                    "deleted": false,
+                    "bot": false,
+                    "bot_chat_history": false,
+                    "bot_nochats": false,
+                    "verified": false,
+                    "restricted": false,
+                    "min": false,
+                    "bot_inline_geo": false,
+                    "support": false,
+                    "scam": false,
+                    "apply_min_photo": true,
+                    "fake": false,
+                    "bot_attach_menu": false,
+                    "premium": false,
+                    "attach_menu_enabled": false,
+                    "bot_can_edit": false,
+                    "access_hash": -7191053192628064216,
+                    "first_name": "m\xe6rd",
+                    "username": "mrdxdd",
+                    "photo": {
+                        "_": "types.UserProfilePhoto",
+                        "photo_id": 5341360868954329246,
+                        "dc_id": 2,
+                        "has_video": false,
+                        "personal": false
+                    },
+                    "status": {
+                        "_": "types.UserStatusRecently"
+                    },
+                    "restriction_reason": [],
+                    "lang_code": "ru",
+                    "usernames": []
+                }
+            ],
+            "inexact": false
+        }
+    }
+}
+08:40:35,372 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436926952898576,
+    "seq_no": 13,
+    "length": 120,
+    "body": {
+        "_": "functions.messages.SendMessage",
+        "peer": {
+            "_": "types.InputPeerChannel",
+            "channel_id": 2129037364,
+            "access_hash": 5767601353792587173
+        },
+        "message": "ну а че норм еблан раз пытается сбить себя",
+        "random_id": 7372436926952898572,
+        "reply_to_msg_id": 40445
+    }
+}
+08:40:35,511 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436925983857665,
+    "seq_no": 15,
+    "length": 408,
+    "body": {
+        "_": "types.RpcResult",
+        "req_msg_id": 7372436926952898576,
+        "result": {
+            "_": "types.Updates",
+            "updates": [
+                {
+                    "_": "types.UpdateMessageID",
+                    "id": 40446,
+                    "random_id": 7372436926952898572
+                },
+                {
+                    "_": "types.UpdateNewChannelMessage",
+                    "message": {
+                        "_": "types.Message",
+                        "id": 40446,
+                        "peer_id": {
+                            "_": "types.PeerChannel",
+                            "channel_id": 2129037364
+                        },
+                        "date": 1716529234,
+                        "message": "ну а че норм еблан раз пытается сбить себя",
+                        "out": true,
+                        "mentioned": false,
+                        "media_unread": false,
+                        "silent": false,
+                        "post": false,
+                        "from_scheduled": false,
+                        "legacy": false,
+                        "edit_hide": false,
+                        "pinned": false,
+                        "noforwards": false,
+                        "from_id": {
+                            "_": "types.PeerUser",
+                            "user_id": 6891506611
+                        },
+                        "reply_to": {
+                            "_": "types.MessageReplyHeader",
+                            "reply_to_msg_id": 40445,
+                            "reply_to_scheduled": false,
+                            "forum_topic": false,
+                            "reply_to_top_id": 40442
+                        },
+                        "entities": [],
+                        "restriction_reason": []
+                    },
+                    "pts": 44648,
+                    "pts_count": 1
+                }
+            ],
+            "users": [
+                {
+                    "_": "types.User",
+                    "id": 6891506611,
+                    "is_self": true,
+                    "contact": false,
+                    "mutual_contact": false,
+                    "deleted": false,
+                    "bot": true,
+                    "bot_chat_history": false,
+                    "bot_nochats": false,
+                    "verified": false,
+                    "restricted": false,
+                    "min": false,
+                    "bot_inline_geo": false,
+                    "support": false,
+                    "scam": false,
+                    "apply_min_photo": true,
+                    "fake": false,
+                    "bot_attach_menu": false,
+                    "premium": false,
+                    "attach_menu_enabled": false,
+                    "bot_can_edit": true,
+                    "access_hash": -2837937283120083366,
+                    "first_name": "лучше чем сучьи стоны",
+                    "username": "bolshe_ne_grusti_bot",
+                    "photo": {
+                        "_": "types.UserProfilePhoto",
+                        "photo_id": 5357226121663469243,
+                        "dc_id": 2,
+                        "has_video": false,
+                        "personal": false
+                    },
+                    "bot_info_version": 5,
+                    "restriction_reason": [],
+                    "bot_inline_placeholder": "бананы",
+                    "usernames": []
+                }
+            ],
+            "chats": [
+                {
+                    "_": "types.Channel",
+                    "id": 2129037364,
+                    "title": "чат extema",
+                    "photo": {
+                        "_": "types.ChatPhoto",
+                        "photo_id": 5242362383882640766,
+                        "dc_id": 2,
+                        "has_video": false
+                    },
+                    "date": 1714226667,
+                    "creator": false,
+                    "left": false,
+                    "broadcast": false,
+                    "verified": false,
+                    "megagroup": true,
+                    "restricted": false,
+                    "signatures": false,
+                    "min": false,
+                    "scam": false,
+                    "has_link": true,
+                    "has_geo": false,
+                    "slowmode_enabled": false,
+                    "call_active": false,
+                    "call_not_empty": false,
+                    "fake": false,
+                    "gigagroup": false,
+                    "noforwards": false,
+                    "join_to_send": false,
+                    "join_request": false,
+                    "forum": false,
+                    "access_hash": 5767601353792587173,
+                    "username": "extemachatik",
+                    "restriction_reason": [],
+                    "admin_rights": {
+                        "_": "types.ChatAdminRights",
+                        "change_info": true,
+                        "post_messages": false,
+                        "edit_messages": false,
+                        "delete_messages": true,
+                        "ban_users": true,
+                        "invite_users": true,
+                        "pin_messages": true,
+                        "add_admins": false,
+                        "anonymous": false,
+                        "manage_call": false,
+                        "other": true,
+                        "manage_topics": false
+                    },
+                    "default_banned_rights": {
+                        "_": "types.ChatBannedRights",
+                        "until_date": 2147483647,
+                        "view_messages": false,
+                        "send_messages": false,
+                        "send_media": false,
+                        "send_stickers": false,
+                        "send_gifs": false,
+                        "send_games": false,
+                        "send_inline": false,
+                        "embed_links": false,
+                        "send_polls": false,
+                        "change_info": true,
+                        "invite_users": false,
+                        "pin_messages": true,
+                        "manage_topics": false,
+                        "send_photos": false,
+                        "send_videos": false,
+                        "send_roundvideos": false,
+                        "send_audios": false,
+                        "send_voices": false,
+                        "send_docs": false,
+                        "send_plain": false
+                    },
+                    "usernames": []
+                }
+            ],
+            "date": 1716529233,
+            "seq": 0
+        }
+    }
+}
+08:40:35,625 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436926481306625,
+    "seq_no": 17,
+    "length": 24,
+    "body": {
+        "_": "types.UpdateShort",
+        "update": {
+            "_": "types.UpdateReadChannelOutbox",
+            "channel_id": 2129037364,
+            "max_id": 40446
+        },
+        "date": 1716529233
+    }
+}
+08:40:39,91 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436944132767744,
+    "seq_no": 15,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:39,184 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436941766456321,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372436944132767744,
+        "ping_id": 0
+    }
+}
+08:40:44,98 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436965607604224,
+    "seq_no": 17,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:44,177 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436963196773377,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372436965607604224,
+        "ping_id": 0
+    }
+}
+08:40:49,101 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372436987082440704,
+    "seq_no": 19,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:49,184 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372436984714655745,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372436987082440704,
+        "ping_id": 0
+    }
+}
+08:40:54,120 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437008557277184,
+    "seq_no": 21,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:54,202 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437006266214401,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437008557277184,
+        "ping_id": 0
+    }
+}
+08:40:59,138 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437030032113664,
+    "seq_no": 23,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:40:59,222 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437027826562049,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437030032113664,
+        "ping_id": 0
+    }
+}
+08:41:04,136 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437051506950144,
+    "seq_no": 25,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:04,221 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437049293153281,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437051506950144,
+        "ping_id": 0
+    }
+}
+08:41:09,129 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437072981786624,
+    "seq_no": 27,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:09,207 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437070701495297,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437072981786624,
+        "ping_id": 0
+    }
+}
+08:41:14,144 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437094456623104,
+    "seq_no": 29,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:14,228 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437092268411905,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437094456623104,
+        "ping_id": 0
+    }
+}
+08:41:19,166 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437115931459584,
+    "seq_no": 31,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:19,249 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437113832072193,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437115931459584,
+        "ping_id": 0
+    }
+}
+08:41:24,174 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437137406296064,
+    "seq_no": 33,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:24,251 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437135317921793,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437137406296064,
+        "ping_id": 0
+    }
+}
+08:41:29,192 pyrogram.session.session DEBUG Sent: {
+    "_": "Message",
+    "msg_id": 7372437158881132544,
+    "seq_no": 35,
+    "length": 16,
+    "body": {
+        "_": "functions.PingDelayDisconnect",
+        "ping_id": 0,
+        "disconnect_delay": 25
+    }
+}
+08:41:29,274 pyrogram.session.session DEBUG Received: {
+    "_": "Message",
+    "msg_id": 7372437156887356417,
+    "seq_no": 18,
+    "length": 20,
+    "body": {
+        "_": "types.Pong",
+        "msg_id": 7372437158881132544,
+        "ping_id": 0
+    }
+}
